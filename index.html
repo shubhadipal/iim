@@ -17,7 +17,16 @@
         .carousel-inner img { 
             width: 100%; 
         } 
-    </style> 
+	</style> 
+	<style>
+		.map-wrapper{
+			max-width: 605px;
+			border: 1px solid red
+		}
+		.googlemap{
+			width: 100%;
+		}
+		</style>
     <style>
     .wow:first-child {
       visibility: hidden;
@@ -39,12 +48,13 @@
  	 	<div class="nav">
  	 		<ul>
  	 			<li><a href="#">Home</a></li>
- 	 			<li><a href="#service">Services</a></li>
+ 	 			<li><a href="#about">About Us</a></li>
 				<li><a href="#schedule">Upcoming Events</a></li>
  	 			<li><a href="#classes">Membership Directory</a></li>
 				<li><a href="#price">Our Team</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
- 	 			<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="#service">FAQs</a></li>
+ 	 			<li><a href="#contact">Contact Us</a></li>
  	 		</ul>
  	 	</div>
  	 </div>
@@ -69,7 +79,7 @@
               
             <div class="carousel-caption"> 
                 <h3 class="text-warning"> 
-                    GeeksforGeeks: Interview Preparation Caption 
+					Indian Institute of Metals    
                 </h3> 
             </div>    
         </div> 
@@ -80,7 +90,7 @@
               
             <div class="carousel-caption"> 
                 <h3 class="text-warning"> 
-                    GeeksforGeeks: Geeks Classes Caption 
+					Indian Institute of Metals
                 </h3> 
             </div>  
         </div> 
@@ -90,7 +100,7 @@
             alt="GFG" width="600" height="755"> 
         <div class="carousel-caption"> 
                 <h3 class="text-warning"> 
-                    GeeksforGeeks: Geeks Classes Caption 
+                    Indian Institute of Metals
                 </h3> 
             </div>  
         </div> 
@@ -106,86 +116,25 @@
 
 <!-- End Home  -->
  
+<!-- Start About -->
+<section class="about" id="about">
+	<div class="container">
+		 <div class="content">
+			   <div class="box text wow slideInLeft">
+					<h2>About Us</h2>
+					<p>The Indian Institute of Metals NIT Durgapur Chapter is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
+					<a href="https://iim-india.net/" class="btn">Read More</a>
+			   </div>
+			   <div class="box img wow slideInRight">
+				<video width="700" height="600" controls>
+					<source src="gg.mp4" type="video/mp4"> 
+				</video>
+			   </div>
 
-<!-- Start Service -->
- <section class="service" id="service">
- 	<div class="container">
- 		 <div class="content">
- 		 	  <div class="text box wow slideInLeft">
-                  <h2>Our Services</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                  <a href="" class="btn">See Details</a>
- 		 	  </div>
- 		 	  <div class="accordian box wow slideInRight">
- 		 	  	    <div class="accordian-container active">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Cardiovascular Equipment</h4>
- 		 	  	    		<span class="fa fa-angle-down"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  	    <div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Strength Training Equipment</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  	    <div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Group Fitness Class</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  	    <div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Other Services</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
-						</div>
-						<div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Other Services</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
-						</div>
-						<div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Other Services</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
-						</div>
-						<div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Other Services</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  </div>
- 		 </div>
- 	</div>
- </section>
-<!-- End Service -->
+		 </div>
+	</div>
+</section>
+<!-- End About -->
 
 <!-- Start Schedule -->
   <section class="schedule" id="schedule">
@@ -316,7 +265,7 @@
   	 	  	  <div class="box wow bounceInUp">
   	 	  	  	  <div class="inner">
   	 	  	  	  	   <div class="price-tag">
-  	 	  	  	  	   	  Faculty Advisors
+  	 	  	  	  	   	  Executive Committee 
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="img">
   	 	  	  	  	   	 <img src="fac.jpg" alt="price" />
@@ -329,7 +278,7 @@
   	 	  	  <div class="box wow bounceInUp" data-wow-delay="0.2s">
   	 	  	  	  <div class="inner">
   	 	  	  	  	   <div class="price-tag">
-  	 	  	  	  	   	  Executive Members
+  	 	  	  	  	   	  Core Operation Team
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="img">
   	 	  	  	  	   	 <img src="ex.jpg" alt="price" />
@@ -357,22 +306,99 @@
   </section>
  <!-- End Price -->
 
- <!-- Start Contact 
+ <!-- Start Service -->
+ <section class="service" id="service">
+	<div class="container">
+		 <div class="content">
+			   <div class="text box wow slideInLeft">
+				 <h2>Frequently Asked Questions</h2>
+				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+				 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+				 <a href="" class="btn">See Details</a>
+			   </div>
+			   <div class="accordian box wow slideInRight">
+					   <div class="accordian-container active">
+						   <div class="head">
+							   <h4>Cardiovascular Equipment</h4>
+							   <span class="fa fa-angle-down"></span>
+						   </div>
+						   <div class="body">
+							   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						   </div>
+					   </div>
+					   <div class="accordian-container">
+						   <div class="head">
+							   <h4>Strength Training Equipment</h4>
+							   <span class="fa fa-angle-up"></span>
+						   </div>
+						   <div class="body">
+							   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						   </div>
+					   </div>
+					   <div class="accordian-container">
+						   <div class="head">
+							   <h4>Group Fitness Class</h4>
+							   <span class="fa fa-angle-up"></span>
+						   </div>
+						   <div class="body">
+							   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						   </div>
+					   </div>
+					   <div class="accordian-container">
+						   <div class="head">
+							   <h4>Other Services</h4>
+							   <span class="fa fa-angle-up"></span>
+						   </div>
+						   <div class="body">
+							   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						   </div>
+					   </div>
+					   <div class="accordian-container">
+						   <div class="head">
+							   <h4>Other Services</h4>
+							   <span class="fa fa-angle-up"></span>
+						   </div>
+						   <div class="body">
+							   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						   </div>
+					   </div>
+					   <div class="accordian-container">
+						   <div class="head">
+							   <h4>Other Services</h4>
+							   <span class="fa fa-angle-up"></span>
+						   </div>
+						   <div class="body">
+							   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						   </div>
+					   </div>
+					   <div class="accordian-container">
+						   <div class="head">
+							   <h4>Other Services</h4>
+							   <span class="fa fa-angle-up"></span>
+						   </div>
+						   <div class="body">
+							   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+						   </div>
+					   </div>
+			   </div>
+		 </div>
+	</div>
+</section>
+<!-- End Service -->
+
+
+ <!-- Start Contact --> 
   <section class="contact" id="contact">
      <div class="container">
         <div class="content">
             <div class="box form wow slideInLeft">
-               <form>
-                  <input type="text" placeholder="Enter Name">
-                  <input type="text" placeholder="Enter Email">
-                  <input type="text" placeholder="Enter Mobile">
-                  <textarea placeholder="Enter Message"></textarea>
-                  <button type="submit">Send Message</button>
-               </form>
-            </div>
+				<div class="map-wrapper">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.312339725455!2d87.2931389!3d23.5476728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33fb9ccb243dfa5!2sNational%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1596982173662!5m2!1sen!2sin" width="520" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
             <div class="box text wow slideInRight">
-                 <h2>Your Complete Web Solutions</h2>
-                  <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                 <h2>Contact Us</h2>
+                  <p class="title-p">The Indian Institute of Metals NIT Durgapur Chapter is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
                   <div class="info">
                       <ul>
                           <li><span class="fa fa-map-marker"></span> Mahatma Gandhi Avenue, Durgapur-713209, West Bengal, India</li>
@@ -386,13 +412,13 @@
                   </div>
 
                   <div class="copy">
-					  Copyright &copy; IIM NIT Durgapur Chapter | All rights reserved
+					   &copy;Copyright IIM NIT Durgapur Chapter . All rights reserved
 				 </div>
             </div>
         </div>
      </div>
   </section>
-  End Contact -->
+ <!-- End Contact -->
 
  <!-- jquery -->
 <script>

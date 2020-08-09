@@ -126,6 +126,9 @@ header .ham-burger span:nth-child(1){
 header .ham-burger span:nth-child(2){
 	transform-origin: left bottom;
 }
+header .ham-burger span:nth-child(3){
+	transform-origin: left bottom;
+}
 
 header .ham-burger.active span:nth-child(1){
 	-webkit-transform: rotate(45deg) translateY(-6px);
@@ -141,10 +144,69 @@ header .ham-burger.active span:nth-child(2){
 	margin: auto;
 }
 
+/* About Section  */
+
+.about{
+	background-color: #9e055e;
+}
+
+.about .content{
+	-webkit-display: flex;
+	display: flex;
+	align-items: center;
+}
+
+.about .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 103px 0px ;
+}
+
+.about .content .img img{
+	width: 100%;
+	display: block;
+}
+
+.about .content .text h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #070606;
+    padding: 0px 0px 20px;
+}
+
+.about .content .text p{
+	font-size: 15px;
+    line-height: 20px;
+    color: #fffbfb;
+    margin: 0;
+    padding: 0px 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about .content .text .btn{
+	padding: 8px 30px;
+    background-color: #001058;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.about .content .text .btn:hover{
+	color:#ffffff;
+	border-color: #ffffff;
+	background-color: transparent;
+}
+
+/* End About Section  */
+
 /*Service Section*/
 .service{
 	padding:100px 0px;
-	background-color: #c11325;
+	background-color: #830048;
 }
 
 .service .content{
@@ -155,7 +217,7 @@ header .ham-burger.active span:nth-child(2){
 .service .content .box{
 	flex:0 0 50%;
 	max-width: 50%;
-	padding:15px;
+	padding:25px;
 }
 
 .service .content .text h2{
@@ -562,6 +624,101 @@ header .ham-burger.active span:nth-child(2){
 	width: 100%;
 }
 
+/*Contact Section*/
+
+.contact{
+	padding:80px 0px;
+	background-color: #838180;
+}
+
+.contact .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.contact .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 15px;
+}
+
+.contact .content .text h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #070706;
+    padding: 0px 0px 20px;
+}
+.contact .content .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.contact .content .text .info ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.contact .content .text .info li{
+	display: block;
+	margin-bottom: 15px;
+	color:#ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: relative;
+	padding-left: 40px;
+	font-family: 'Open-Sans',sans-serif;
+}
+.contact .content .text .info li span{
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+	font-size: 20px;
+	color:#030303;
+}
+.contact .content .text .social {
+	padding-top: 30px;
+}
+.contact .content .text .social a{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #630063;
+    text-decoration: none;	
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border:1px solid transparent;
+} 
+
+.contact .content .text .social a:hover{
+	background-color: transparent;
+    border-color: #ffffff;
+}
+
+.contact .content .text .social a span{
+	color:#ffffff;
+	font-size: 20px;
+}
+
+.contact .content .text .copy{
+	border-top:1px solid #6b0202;
+	margin-top: 30px;
+	padding-top: 20px;
+	color:#41008b;
+	font-size: 15px;
+}
+
+
+
+
+
 /*Responsive*/
 
 /*if screen width is less than or equal to 991px then*/
@@ -586,7 +743,7 @@ header .ham-burger.active span:nth-child(2){
 
 /*if screen width is less than or equal to 767px then*/
 @media(max-width: 767px){
-  .home h1{
+.home h1{
       font-size: 40px;
   }
 .service .content{
@@ -623,6 +780,13 @@ flex: 0 0 100%;
 	flex-wrap: wrap;
 }
 .price-package .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .content{
+	flex-wrap: wrap;
+}
+.contact .content .box {
     flex: 0 0 100%;
     max-width: 100%;
 }
